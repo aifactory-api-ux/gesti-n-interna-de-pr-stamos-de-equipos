@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# Git
+.git/
+.gitignore
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Docker files (not needed inside image)
+docker-compose*.yml
+Dockerfile*
+.dockerignore
+run.sh
+
+# Documentation
+*.md
+!README.md
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Debug
+.node_repl_history
+
+# Temporary files
+tmp/
+temp/

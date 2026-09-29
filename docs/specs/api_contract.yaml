@@ -1,0 +1,350 @@
+openapi: 3.1.0
+info:
+  title: Derived API Contract
+  version: 1.0.0
+paths:
+  /audit-logs:
+    get:
+      operationId: get_audit_logs
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /audit-logs/loan/:loanId:
+    get:
+      operationId: get_audit_logs_loan_loanId
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /auth/azure/callback:
+    get:
+      operationId: get_auth_azure_callback
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /auth/azure/login:
+    get:
+      operationId: get_auth_azure_login
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /auth/logout:
+    post:
+      operationId: post_auth_logout
+      responses:
+        '201':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /auth/me:
+    get:
+      operationId: get_auth_me
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /collaborators:
+    get:
+      operationId: get_collaborators
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /collaborators/:id:
+    get:
+      operationId: get_collaborators_id
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /collaborators/me:
+    get:
+      operationId: get_collaborators_me
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /equipment:
+    delete:
+      operationId: delete_equipment
+      responses:
+        '204':
+          description: Derived from SPEC.md
+    get:
+      operationId: get_equipment
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      operationId: post_equipment
+      responses:
+        '201':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /equipment/:id:
+    delete:
+      operationId: delete_equipment_id
+      responses:
+        '204':
+          description: Derived from SPEC.md
+    get:
+      operationId: get_equipment_id
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+    patch:
+      operationId: patch_equipment_id
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /equipment/types:
+    get:
+      operationId: get_equipment_types
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /health:
+    get:
+      operationId: get_health
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /loans:
+    get:
+      operationId: get_loans
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      operationId: post_loans
+      responses:
+        '201':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /loans/:id:
+    get:
+      operationId: get_loans_id
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /loans/:id/approve:
+    post:
+      operationId: post_loans_id_approve
+      responses:
+        '201':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /loans/:id/cancel:
+    post:
+      operationId: post_loans_id_cancel
+      responses:
+        '201':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /loans/:id/reject:
+    post:
+      operationId: post_loans_id_reject
+      responses:
+        '201':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /loans/:id/return:
+    post:
+      operationId: post_loans_id_return
+      responses:
+        '201':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /loans/my:
+    get:
+      operationId: get_loans_my
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /loans/overdue:
+    get:
+      operationId: get_loans_overdue
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /loans/pending:
+    get:
+      operationId: get_loans_pending
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /manager/reports/export:
+    get:
+      operationId: get_manager_reports_export
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /manager/reports/loans:
+    get:
+      operationId: get_manager_reports_loans
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /manager/stats:
+    get:
+      operationId: get_manager_stats
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
+  /metrics:
+    get:
+      operationId: get_metrics
+      responses:
+        '200':
+          description: Derived from SPEC.md
+          content:
+            application/json:
+              schema:
+                type: object
